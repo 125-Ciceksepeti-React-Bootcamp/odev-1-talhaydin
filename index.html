@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="./images/javascript.svg" alt=""></a>
+        <form class="searchBar" id="srcBar">
+            <input placeholder="Search Here"><i class="fas fa-search"></i></input>
+        </form>
+        <div class="profilePicture"> <i class="fas fa-user-circle"></i></div>
+    </header>
+
+    <div id="container">
+        <div class="content">
+            <div class="leftContent">
+                <button id="formBtn" class="toggleBtn" onclick="handleForm()">Toggle Form </button>
+                <br>
+                <button id="cardBtn" class="toggleBtn" onclick="handleCards()"> Toggle Cards</button>
+            </div>
+            <div class="rightContent">
+                <div class="leftContentForm">
+                    <form action="" method="POST" id="bestFormEver">
+                        <label for="fname">First name:</label><br> <br>
+                        <input type="text" id="fname" name="fname" value=""><br> <br>
+                        <label for="lname">Last name:</label><br> <br>
+                        <input type="text" id="lname" name="lname" value=""> <br> <br>
+                        <label for="phone">Phone:</label><br> <br>
+                        <input type="text" id="phone" name="phone" value=""> <br> <br>
+                        <label for="address">Address:</label><br> <br>
+                        <input type="text" id="address" name="address" value=""> <br> <br>
+                        <input type="submit" value="Submit">
+                    </form>
+
+                </div>
+                <div class="rightContentGrid">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
